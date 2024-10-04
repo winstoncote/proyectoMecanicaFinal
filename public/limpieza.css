@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    position: fixed;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 29.4%;
+    z-index: 10;
+}
+
+header.abajo {
+    background: #000000cf;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    padding-right: 31.2rem;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: -10rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+span{
+    color: #ea1538;
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+header ul {
+    width: 670px;
+}
+
+header ul li a {
+    position: relative;
+    transition: 0.3s;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+header ul li a:hover {
+    color: #ea1538;
+    transition: .3s;
+}
+
+header ul li a::before,
+header ul li a::after 
+    {
+        content: '';
+        border-bottom: 2px solid white;
+        position: absolute;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+header ul li a::before {
+    padding-top: 25px;
+    width: 90%;
+    right: 0;
+}
+
+header ul li a::after {
+    padding-top: 30px;
+    width: 60%;
+    left: 0;
+}
+
+header ul li a:hover::before {
+    opacity: 1;
+    width: 70%;
+}
+
+header ul li a:hover::after {
+    opacity: 1;
+    width: 40%;
+}
+
+header .cart-svg {
+    margin-left: 8rem;
+    margin-top: .9rem;
+    background-color: #ea1538;
+    padding: .5rem;
+    border-radius: 2rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .cart-svg svg {
+    padding-right: .2rem;
+}
+
+.bg {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75),
+    rgba(5, 7, 12, 0.75)), 
+    url(/public/img/Imagen1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 6.5rem;
+}
+
+.social {
+    width: 100px;
+    position: fixed;
+    margin-top: 12rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.barra {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.barra li {
+    list-style-type: none;
+    width: 80%;
+}
+
+.barra li:hover {
+    width: 110%;
+    transition: all .3s
+}
+
+.barra li a {
+    text-align: center;
+    padding: 10px;
+    display: block;
+}
+
+.social li .icon-facebook {background:#3b5998 ;}
+.social li .icon-instagram {background:#d13284 ;}
+.social li .icon-twitter {background:#000000 ;}
+.social li .icon-mail {background:#e1dede ;}
+
+.separador {
+    background-color: #950b22;
+    width: 106.3%;
+    height: 3rem;
+    margin-left: -6rem;
+}
+
+.separador1 {
+    width: 67.5%;
+    border-top: solid transparent 0px;
+    border-left: solid transparent 50px;
+    border-right: solid transparent 50px;
+    border-bottom: solid #950b22 100px;
+    transform: rotate(180deg);
+    margin-left: 16.5rem;
+    padding-bottom: 2rem;
+}
+
+.titulo {
+    margin-top: 8rem;
+    margin-left: 46.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-left: 15rem;
+}
+
+.image img {
+    width: 50rem;
+    height: 25rem;
+    margin-top: .7rem;
+}
+
+.image ul {
+    list-style: none;
+}
+
+.image ul li a {
+    text-decoration: none;
+    color: #000000;
+    line-height: 5rem;
+}
+
+.image ul li a {
+    background-color: #cfcfcf;
+    padding: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+
+.image ul li a:hover {
+    background-color: #950b22;
+    color: #fff;
+}
+
+.image .limpieza {
+    padding-right: 12rem;
+}
+
+.image .Piezas-de-reparacion {
+    padding-right: 6rem;
+}
+
+.image .reparacion-de-motores {
+    padding-right: 4.7rem;
+}
+
+.image .servicio-de-cambio-de-llantas {
+    padding-right: 1.6rem;
+}
+
+.image .servicio-de-pintado {
+    padding-right: 6.1rem;
+}
+
+.image .servicio-de-bateria-de-coches {
+    padding-right: 1.4rem;
+}
+
+.descripcion h2 {
+    margin-left: 35.5rem;
+    margin-top: -2.3rem;
+    margin-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.descripcion p {
+    margin-left: 35.5rem;
+    margin-right: 8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+}
+
+.separador3 {
+    width: 71%;
+    border-top: solid transparent 0px;
+    border-left: solid transparent 40px;
+    border-right: solid transparent 40px;
+    border-bottom: solid #6f6f6f 55px;
+    margin-left: 11.3rem;
+    margin-top: 10rem;
+}
+
+.separador4 {
+    background-color: #6f6f6f;
+    width: 106.3%;
+    height: 3rem;
+    margin-left: -6rem;
+    margin-top: -.4rem;
+}
+
+.footer {
+    background-color: #333; /* Gris oscuro */
+    color: #fff; /* Blanco */
+    padding: 0px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    margin: 10px;
+    margin-bottom: 3rem;
+}
+
+.footer-section ul li {
+    list-style: none;
+}
+
+.footer-section ul li a{
+    text-decoration: none;
+    color: #bebebe;
+}
+
+.footer-section ul li {
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+}
+
+.footer-section p {
+    color: #bebebe;
+    line-height: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+}
+
+.footer-section ul li a:hover {
+    color: #ea1538;
+}
+
+.footer-section h3 {
+    /*color: #ff0000; /* Rojo */
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+}
+
+.footer-copyright {
+    background-color: #950b22; /* Rojo */
+    height: 3rem;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    clear: both;
+}
+
+.footer-copyright p {
+    margin-top: .8rem;
+}
+
+.innovaF {
+    font-size: 1.8rem;
+}
