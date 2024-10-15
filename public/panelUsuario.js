@@ -43,3 +43,4 @@ const closeWindow2 = () => {
 closeButton2.addEventListener('click', () =>closeWindow2())
 
 window.addEventListener('click', e=> e.target == windowBackground2 && closeWindow2())
+

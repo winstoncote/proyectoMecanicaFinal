@@ -294,4 +294,4 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Error al editar el usuario: ' + error.message);  
         }  
     }
-});
+});  

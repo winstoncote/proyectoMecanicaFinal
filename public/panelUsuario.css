@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -28,6 +29,8 @@ header.abajo {
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: -.1rem;
+    font-weight: bold;
+    text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -215,7 +218,7 @@ header .cart-svg svg {
 }
 
 .info {
-    margin-top: 10rem;
+    margin-top: 8rem;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
@@ -245,6 +248,11 @@ header .cart-svg svg {
     box-shadow: #000000 -.5px 1px 15px;
     color: #ffffffbe;
     cursor: pointer;
+}
+
+.boton a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .fondo .boton:hover {
@@ -302,6 +310,7 @@ header .cart-svg svg {
     height: 3rem;
     margin-left: -6.1rem;
     padding-left: 6.1rem;
+    padding-bottom: 4rem;
 }
 
 .separador2-h2 {
@@ -312,6 +321,10 @@ header .cart-svg svg {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: -1rem;
+}
+
+.separador2-h2 h2 {
+    margin-top: 5rem;
 }
 
 .fondo2 {
@@ -449,10 +462,18 @@ header .cart-svg svg {
     height: 100%;
 }
 
+.separador5 {
+    background-color: #6f6f6f;
+    width: 100%;
+    height: 2rem;
+    margin-left: -6.1rem;
+    padding-left: 6.1rem;
+}
+
 .titulos .gallery {
     display: flex;
     justify-content: center;
-    margin-top: 2.5rem;
+    margin-top: 7rem;
     font-size: 2.1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -486,10 +507,19 @@ header .cart-svg svg {
     transform: scale(1.05);  
 }
 
+.separador6 {
+    background-color: #fff;
+    width: 100%;
+    height: 1rem;
+    margin-left: -6.1rem;
+    padding-left: 6.1rem;
+    margin-bottom: 8rem;
+}
+
 .titulos .teamGroup {
     display: flex;
     justify-content: center;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
     font-size: 2.1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -500,7 +530,6 @@ header .cart-svg svg {
     padding: 100px;
     margin-top: -4rem;
     margin-left: 2.5rem;
-    margin-bottom: -7rem;
 }
 
 .teamG {

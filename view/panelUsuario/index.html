@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/panelUsuario.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/img/favicon.png" type="image/x-icon">
     <title>innovauto</title>
 </head>
 <body>
   <header>
-    <h2 class="logo">innov<span>auto</span></h2>
+    <a href="#" class="logo">innov<span>auto</span></a>
+
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Best Jobs</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Contac Us</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#bestJobs">Best Jobs</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contacUS">Contac Us</a></li>
     </ul>
     <div class="cart-svg">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle></svg>
     </div>
   </header>
-   <div class="encabezado">
+
+   <section id="home" class="encabezado">
 
     <div class="social">
         <div class="barra">
@@ -53,24 +55,27 @@
         <h1>Todo en reparacion de autos</h1>
         <h3>La pasion por los motores con la excelencia del servicio</h3>
 
-          <button class="boton">Ver mas</button>
+          <button class="boton"><a href="#about">Ver más</a></button>
 
        </div>
 
-   </div>
+   </section>
 
    <div class="fondo">
 
+    <section id="about">
+
    <div class="separador"><div class="separador1"></div></div>
+
 
    <div class="info"><h2>Ofrecemos servicios comodos y de calidad</h2>
     <p>Mecánica y Venta de Repuestos de Calidad
       En innov<span>auto</span>, nos enorgullecemos de ofrecer servicios de mecánica de alta calidad y una amplia variedad de repuestos originales para automóviles. Nuestro compromiso es brindar un servicio profesional, rápido y confiable, asegurando que su vehículo esté en las mejores manos.</p>
   </div>
 
-  <button class="boton">Ver servicios</button>
+  <button class="boton"><a href="#contacUS">Ver servicios</a></button>
 
-  <section class="virtudes">
+  <div class="virtudes">
     
     <div class="virtudes-svg">
       <svg xmlns="http://www.w3.org/2000/svg" class="svg1" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter">
@@ -121,12 +126,14 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dicta, dolore.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<section id="bestJobs">
 
   <div class="separador3"></div>
 
   </div>
-
 
   <div class="separador2">
 
@@ -218,9 +225,15 @@
         </svg>
       </div>
 
-    </div>    
+    </div>   
 
     </div>
+
+  </section>
+
+  <section id="gallery"></section>
+
+  <div class="separador5"></div>
 
     <div class="titulos">
       <h2 class="gallery">Galeria</h2>
@@ -237,6 +250,12 @@
       <div class="box"><img src="/public/img/26.jpg"></div>
     </div>
 
+  </section>
+
+  <section id="team">
+
+    <div class="separador6"></div>
+
     <div class="titulos">
       <h2 class="teamGroup">Miembros del Equipo</h2>
     </div>
@@ -247,6 +266,10 @@
       <div class="teamG"><img src="/public/img/29.jpg"></div>
       <div class="teamG"><img src="/public/img/30.jpg"></div>
     </div>
+
+  </section>
+
+  <section id="contacUS">
 
     <footer class="footer">
       <div class="footer-container">
@@ -278,6 +301,8 @@
           <p>&copy; 2024 By Winston Cote</p>
       </div>
   </footer>
+
+</section>
 
 
   </div>
